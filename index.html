@@ -32,7 +32,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="li-3"><a href="#">Kontakt</a></li>
+                    <li class="li-3"><a href="#form">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
@@ -126,17 +126,24 @@
         </div>
     </section>
     <section id="form">
-        <div class="container">
+        <div class="container clearfix">
             <div class="form-header">
                 <span>Kontakt</span>
             </div>
-            <form>
-                <input type="text" name="name" placeholder="Imię"/>
-                <input type="text" name="email" placeholder="email"/>
-                <textarea name="text" placeholder="Wiadomość"></textarea>
-                <label><input type="checkbox" name="option" maxlength="1">Zgadzam się na przetwarzane danych osobowych</label>
-                <input type="submit">Wyślij</input>
-            </form>
+            <div class="form">
+                <form>
+                    <div class="form-left">
+                        <input type="text" name="name" placeholder="Imię"/>
+                        <input type="text" name="email" placeholder="email"/>
+                        <textarea name="text" placeholder="Wiadomość"></textarea>
+                    </div>
+                    <div class="form-right">
+                        <div class="form-image"></div>
+                        <label><input type="checkbox" name="option" maxlength="1">Zgadzam się na przetwarzane danych osobowych</label>
+                        <input type="submit"></input>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
     <footer id="footer">
@@ -144,10 +151,10 @@
             <span class="copyright">Copyright 2014 &#124; All Rights Reserved. &#45; Sit On Chair</span>
             <p>Sit <span>on</span> chair</p>
             <div class="footer-media">
-                <img src="images/flickr.png">
-                <img src="images/vimeo.png">
-                <img src="images/pinterest.png">
-                <img src="images/twitter.png">
+                <a href="#"><img src="images/flickr.png"></a>
+                <a href="#"><img src="images/vimeo.png"></a>
+                <a href="#"><img src="images/pinterest.png"></a>
+                <a href="#"><img src="images/twitter.png"></a>
             </div>
         </div>
     </footer>
