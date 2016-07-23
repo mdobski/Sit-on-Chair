@@ -48,7 +48,7 @@
             <div class="image-describtion">
                 <h1>Sit <span> on </span> our <span> chair</span></h1>
                 <p>We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</p>
-                <button>Zobacz więcej</button>
+                <a href="#">Zobacz więcej</a>
             </div>
             <div class="arrow-right">
                 &gt;
@@ -75,19 +75,20 @@
     </section>
     <section id="prices">
         <div class="container clearfix">
-            <span></span>
-            <hr>
+            <div class="prices-header">
+                <span>Cennik</span>
+            </div>
             <div class="price1">
                 <div class="price1-circle">
                     <div class="price1-dot">
                     
                     </div>
                 </div>
-                <span>Basic plan</span>
-                <div class="price1-value">85,99 pln/msc</div>
+                <span class="price1-header">Basic plan</span>
+                <div class="price1-value">85<span>99</span><br><span>pln/msc</span></div>
                 <div class="price1-describtion">
-                    <span>Zakup towaru + dowóz</span>
-                    <span>Serwis</span>
+                    <div class="price1-opt1">Zakup towaru + dowóz</div>
+                    <div class="price1-opt2">Serwis</div>
                     <button>Dołącz</button>
                 </div>
             </div>
@@ -97,12 +98,12 @@
                     
                     </div>
                 </div>
-                <span>Standard plan</span>
-                <div class="price2-value">95,99 pln/msc</div>
+                <span class="price2-header">Standard plan</span>
+                <div class="price2-value">95<span>99</span><br><span>pln/msc</span></div>
                 <div class="price2-describtion">
-                    <span>Zakup towaru + dowóz</span>
-                    <span>Serwis</span>
-                    <span>Gwarancja 5 lat</span>
+                    <div class="price2-opt1">Zakup towaru + dowóz</div>
+                    <div class="price2-opt2">Serwis</div>
+                    <div class="price2-opt3">Gwarancja 5 lat</div>
                     <button>Dołącz</button>
                 </div>
             </div>
@@ -112,13 +113,13 @@
                     
                     </div>
                 </div>
-                <span>Advance plan</span>
-                <div class="price3-value">211,00 pln/msc</div>
+                <span class="price3-header">Advance plan</span>
+                <div class="price3-value">211<span>00</span><br><span>pln/msc</span></div>
                 <div class="price3-describtion">
-                    <span>Zakup towaru + dowóz</span>
-                    <span>Serwis</span>
-                    <span>Gwarancja 5 lat</span>
-                    <span>Porady projektanta</span>
+                    <div class="price3-opt1">Zakup towaru + dowóz</div>
+                    <div class="price3-opt2">Serwis</div>
+                    <div class="price3-opt3">Gwarancja 5 lat</div>
+                    <div class="price3-opt4">Porady projektanta</div>
                     <button>Dołącz</button>
                 </div>
             </div>
@@ -126,22 +127,29 @@
     </section>
     <section id="form">
         <div class="container">
-            <span>Kontakt</span>
-            <hr>
+            <div class="form-header">
+                <span>Kontakt</span>
+            </div>
             <form>
-                
+                <input type="text" name="name" placeholder="Imię"/>
+                <input type="text" name="email" placeholder="email"/>
+                <textarea name="text" placeholder="Wiadomość"></textarea>
+                <label><input type="checkbox" name="option" maxlength="1">Zgadzam się na przetwarzane danych osobowych</label>
+                <input type="submit">Wyślij</input>
             </form>
         </div>
     </section>
     <footer id="footer">
-        <span>Copyright 2014 &#124; All Rights Reserved. &#45; Sit On Chair</span>
-        <div class="footer-media">
-            <img src="images/flickr.png">
-            <img src="images/vimeo.png">
-            <img src="images/pinterest.png">
-            <img src="images/twitter.png">
+        <div class="container clearfix">
+            <span class="copyright">Copyright 2014 &#124; All Rights Reserved. &#45; Sit On Chair</span>
+            <p>Sit <span>on</span> chair</p>
+            <div class="footer-media">
+                <img src="images/flickr.png">
+                <img src="images/vimeo.png">
+                <img src="images/pinterest.png">
+                <img src="images/twitter.png">
+            </div>
         </div>
-        <p>Sit <span>on</span> chair</p>
     </footer>
 </body>
 </html>

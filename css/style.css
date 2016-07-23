@@ -179,16 +179,24 @@ header nav ul li a {
     line-height: 22px;
     padding: 40px 0;
 }
-#intro .image-describtion button {
+#intro .image-describtion a {
     font-size: 20px;
     text-transform: uppercase;
     color: white;
     background-color: #25c5a9;
-    padding: 12px 40px;
+    padding: 12px 45px;
     border-radius: 10px;
     font-family: 'Raleway';
     border-style: none;
 }
+#intro .image-describtion a:hover {
+    background-color: white;
+    color: #25c5a9;
+    border: 1px solid #25c5a9;
+}
+
+/*-*-*-* SECTION 'GALLERY' *-*-*-*/
+
 #gallery {
     width: 100%;
     background-color: white;
@@ -226,12 +234,12 @@ header nav ul li a {
     height: 225px;
     width: 330px;
     background: url('../images/box2_img.jpg') no-repeat;
-    margin: 0 25px;
+    margin: 0 29px;
 }
 #gallery .content3 {
     float: left;
     height: 250px;
-    width: 338px;
+    width: 330px;
     border: 1px solid #dbdbdb;
     padding: 30px 20px;
     color: #8b8b8b;
@@ -246,26 +254,431 @@ header nav ul li a {
     margin-top: 20px;
 }
 
+/*-*-*-* SECTION #PRICES *-*-*-*/
 
+#prices {
+    width: 100%;
+    height: 725px;
+    background-color: #eaeaec;
+}
+#prices .container {
+    padding: 50px 0;
+}
+#prices .prices-header {
+    width: 100%;
+    float: left;
+    clear: both;
+}
+#prices .prices-header span {
+    font-size: 20px;
+    padding-right: 250px;
+    padding-bottom: 5px;
+    border-bottom: 7px solid #25c5a9;
+    text-transform: uppercase;
+    clear: both;
+}
 
+/*-*-*-* 1-WSZA KARTA Z CENAMI *-*-*-*/
 
+#prices .price1 {
+    position: relative;
+    float: left;
+    width: 330px;
+    height: 500px;
+    border: 2px solid #d5d5d5;
+    background-color: #f9f9f9;
+    margin-top: 80px;
+    text-align: center;
+}
+.price1 > span {
+    display: block;
+    text-transform: uppercase;
+    color: #25c5a9;
+    padding-top: 40px;
+    font-size: 20px;
+}
+#prices .price1-value {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #d5d5d5;
+    text-align: center;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #c0c0c0;
+    font-weight: bold;
+    margin: 30px auto;
+}
+#prices .price1-value span {
+    font-size: 12px;
+    vertical-align: text-top;
+    font-weight: normal;
+}
+#prices .price1 .price1-describtion .price1-opt1 {
+    width: 100%;
+    background-color: #e4e4e4;
+    padding: 5px 0;
+    font-size: 25px;
+    color: #828282;
+}
+#prices .price1 .price1-describtion .price1-opt2 {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 5px 0;
+    font-size: 25px;
+    margin-bottom: 110px;
+    color: #828282;
+}
+#prices .price1 .price1-describtion button {
+    background-color: #25c5a9;
+    padding: 8px 30px;
+    border-radius: 9px;
+    border-style: none;
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    color: white;
+    font-size: 16px;
+}
 
+/*-*-*-* 2-GA KARTA Z CENAMI *-*-*-*/
 
+#prices .price2 {
+    position: relative;
+    float: left;
+    width: 330px;
+    height: 500px;
+    border: 2px solid #d5d5d5;
+    background-color: #f9f9f9;
+    margin: 80px 29px 65px 29px;
+    text-align: center;
+}
+.price2 > span {
+    display: block;
+    text-transform: uppercase;
+    color: #25c5a9;
+    padding-top: 40px;
+    font-size: 20px;
+}
+#prices .price2-value {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #d5d5d5;
+    text-align: center;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #c0c0c0;
+    font-weight: bold;
+    margin: 30px auto;
+}
+#prices .price2-value span {
+    font-size: 12px;
+    vertical-align: text-top;
+    font-weight: normal;
+}
+#prices .price2 .price2-describtion .price2-opt1 {
+    width: 100%;
+    background-color: #e4e4e4;
+    padding: 5px 0;
+    font-size: 25px;
+    color: #828282;
+}
+#prices .price2 .price2-describtion .price2-opt2 {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 5px 0;
+    font-size: 25px;
+    color: #828282;
+}
+#prices .price2 .price2-describtion .price2-opt3 {
+    margin-bottom: 70px;
+    width: 100%;
+    background-color: #e4e4e4;
+    padding: 5px 0;
+    font-size: 25px;
+    color: #828282;
+}
+#prices .price2 .price2-describtion button {
+    background-color: #25c5a9;
+    padding: 8px 30px;
+    border-radius: 9px;
+    border-style: none;
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    color: white;
+    font-size: 16px;
+}
 
+/*-*-*-* 3-CIA KARTA Z CENAMI *-*-*-*/
 
+#prices .price3 {
+    position: relative;
+    float: left;
+    width: 330px;
+    height: 500px;
+    border: 2px solid #d5d5d5;
+    margin-top: 80px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.price3 > span {
+    display: block;
+    text-transform: uppercase;
+    color: #25c5a9;
+    padding-top: 40px;
+    font-size: 20px;
+}
+#prices .price3-value {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #d5d5d5;
+    text-align: center;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #c0c0c0;
+    font-weight: bold;
+    margin: 30px auto;
+}
+#prices .price3-value span {
+    font-size: 12px;
+    vertical-align: text-top;
+    font-weight: normal;
+}
+#prices .price3 .price3-describtion .price3-opt1 {
+    width: 100%;
+    background-color: #e4e4e4;
+    padding: 5px 0;
+    font-size: 25px;
+    color: #828282;
+}
+#prices .price3 .price3-describtion .price3-opt2 {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 5px 0;
+    font-size: 25px;
+    color: #828282;
+}
+#prices .price3 .price3-describtion .price3-opt3 {
+    width: 100%;
+    background-color: #e4e4e4;
+    padding: 5px 0;
+    font-size: 25px;
+    color: #828282;
+}
+#prices .price3 .price3-describtion .price3-opt4 {
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 5px 0;
+    font-size: 25px;
+    color: #828282;
+}
+#prices .price3 .price3-describtion button {
+    background-color: #25c5a9;
+    padding: 8px 30px;
+    border-radius: 9px;
+    border-style: none;
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    color: white;
+    font-size: 16px;
+}
 
+/*-*-*-* KROPKI NAD KARTAMI Z CENAMI *-*-*-*/
 
+.price1-circle, .price2-circle, .price3-circle {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 57px;
+    height: 57px;
+    border: 2px solid #d5d5d5;
+    border-radius: 100%;
+    background-color: white;
+    z-index: 1;
+}
+.price1-dot, .price2-dot, .price3-dot {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    background-color: #c2c2c2;
+    border-radius: 100%;
+    z-index: 2;
+}
 
+/*-*-*-* EFEKT PODŚWIETLENIA PO NAJECHANIU MYSZĄ NA ELEMENTY 'PRICES' *-*-*-*/
 
+/* HIGHLIGHT 'PRICE1' */
+#prices .price1:hover, #prices .price1:hover .price1-circle {
+    background-color: #25c5a9;
+    border: 2px solid #25c5a9;
+}
+#prices .price1:hover .price1-header {
+    color: white;
+}
+#prices .price1:hover .price1-dot {
+    background-color: white;
+}
+#prices .price1:hover .price1-value {
+    border: #25c5a9;
+}
+#prices .price1:hover .price1-opt1 {
+    background-color: white;
+}
+#prices .price1:hover .price1-opt2 {
+    background-color: #e4e4e4;
+}
+#prices .price1:hover button {
+    background-color: white;
+    color: #25c5a9;
+}
 
+/* HIGHLIGHT 'PRICE2' */
+#prices .price2:hover, #prices .price2:hover .price2-circle {
+    background-color: #25c5a9;
+    border: 2px solid #25c5a9;
+}
+#prices .price2:hover .price2-header {
+    color: white;
+}
+#prices .price2:hover .price2-dot {
+    background-color: white;
+}
+#prices .price2:hover .price2-value {
+    border: #25c5a9;
+}
+#prices .price2:hover .price2-opt1 {
+    background-color: white;
+}
+#prices .price2:hover .price2-opt2 {
+    background-color: #e4e4e4;
+}
+#prices .price2:hover .price2-opt3 {
+    background-color: white;
+}
+#prices .price2:hover button {
+    background-color: white;
+    color: #25c5a9;
+}
 
+/* HIGHLIGHT 'PRICE3' */
+#prices .price3:hover, #prices .price3:hover .price3-circle {
+    background-color: #25c5a9;
+    border: 2px solid #25c5a9;
+}
+#prices .price3:hover .price3-header {
+    color: white;
+}
+#prices .price3:hover .price3-dot {
+    background-color: white;
+}
+#prices .price3:hover .price3-value {
+    border: #25c5a9;
+}
+#prices .price3:hover .price3-opt1 {
+    background-color: white;
+}
+#prices .price3:hover .price3-opt2 {
+    background-color: #e4e4e4;
+}
+#prices .price3:hover .price3-opt3 {
+    background-color: white;
+}
+#prices .price3:hover .price3-opt4 {
+    background-color: #e4e4e4;
+}
+#prices .price3:hover button {
+    background-color: white;
+    color: #25c5a9;
+}
 
+/*-*-*-* SECTION 'FORM' *-*-*-*/
 
+#form {
+    width: 100%;
+    background-color: white;
+}
+#form .container {
+    padding: 50px 0;
+    height: 650px;
+}
+#from .form-header {
+    width: 100%;
+    float: left;
+    clear: both;
+}
+#form .form-header span {
+    font-size: 20px;
+    padding-right: 233px;
+    padding-bottom: 5px;
+    border-bottom: 7px solid #25c5a9;
+    text-transform: uppercase;
+    clear: both;
+}
+#form form {
+    float: left;
+    margin-top: 50px;
+}
+#form form input {
+    width: 635px;
+    height: 66px;
+    border: 1px solid #a1e6d1;
+    font-size: 25px;
+    font-family: 'Raleway';
+    font-weight: 300;
+    color: #cfcfcf;
+}
+#form form textarea {
+    width: 635px;
+    height: 190px;
+    border: 1px solid #a1e6d1;
+    font-size: 25px;
+    font-family: 'Raleway';
+    font-weight: 300;
+    padding: 10px 0 0 5px;
+    color: #cfcfcf;
+}
+#form form input:nth-child(2) {
+    margin: 25px 0;
+}
+#form form input[type=checkbox] {
+    width: 50px;
+    border: 1px solid #25c5a9;
+}
+#form form input[type=submit] {
+    
+}
 
+/* FOOTER */
 
-
-
-
+#footer {
+    width: 100%;
+    margin-bottom: 50px;
+}
+#footer .copyright {
+    float: left;
+    font-family: 'Raleway';
+}
+#footer p {
+    float: right;
+}
+#footer .footer-media {
+    float: right;
+}
 
 
 
