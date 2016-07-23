@@ -91,35 +91,160 @@ header nav ul li a {
     color: white;
     text-transform: uppercase;
     font-size: 14px;
+    letter-spacing: 1px;
 }
 .dropdown-1, .dropdown-2 {
     display: none;
     position: absolute;
     background-color: black;
-    top: 60px;
-    left: 0;
-    padding: 0px 10px 15px 10px;
+    top: 55px;
+    left: -18px;
+    padding: 15px 10px 15px 10px;
     line-height: 14px;
     color: white;
 }
-.li-1-arrow {
-    position: relative;
-    top: -10px;
+.li-1-arrow, .li-2-arrow {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     background-color: black;
     width: 15px;
     height: 15px;
-    transform: rotate(45deg)
+    transform: rotate(45deg);
 }
-.li-1:hover .dropdown-1 {
+.li-1:hover .dropdown-1, .li-2:hover .dropdown-2 {
     display: block;
 }
-.li-1 li:nth-child(2) {
+.li-1 li:nth-child(2), .li-2 li:nth-child(2) {
     margin: 15px 0;
 }
-
-
-
-
+.li-2 li:first-child {
+    white-space: nowrap;
+}
+#intro {
+    width: 100%;
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 56%, rgba(208,207,215,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(56%, rgba(246,246,246,1)), color-stop(100%, rgba(208,207,215,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 56%, rgba(208,207,215,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 56%, rgba(208,207,215,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 56%, rgba(208,207,215,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 56%, rgba(208,207,215,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d0cfd7', GradientType=0 );
+}
+#intro .container div {
+    float: left;
+    height: 480px;
+}
+#intro .arrow-left, #intro .arrow-right {
+    display: block;
+    width: 5%;
+    line-height: 480px;
+    font-size: 70px;
+    color: #25c5a9;
+    font-weight: 300;
+}
+#intro .arrow-left span {
+    margin: auto 0;
+    width: 100%;
+}
+#intro .arrow-right {
+    text-align: right;
+}
+#intro .image, #intro .image-describtion {
+    width: 45%;
+}
+#intro .image .image-img {
+    width: 100%;
+    background: url('../images/black_chair.png') no-repeat center center;
+}
+#intro .image-describtion {
+    text-align: center;
+    padding-right: 80px;
+}
+#intro .image-describtion h1 {
+    margin-top: 120px;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+#intro .image-describtion h1 span {
+    color: #25c5a9;
+    font-weight: bold;
+}
+#intro .image-describtion p {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 40px 0;
+}
+#intro .image-describtion button {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #25c5a9;
+    padding: 12px 40px;
+    border-radius: 10px;
+    font-family: 'Raleway';
+    border-style: none;
+}
+#gallery {
+    width: 100%;
+    background-color: white;
+}
+#gallery .container {
+    padding-top: 25px;
+    padding-bottom: 70px;
+}
+#gallery .content1 {
+    float: left;
+    height: 225px;
+    width: 330px;
+    background: url('../images/box1_img.jpg') no-repeat;
+}
+#gallery .content1 div, #gallery .content2 div {
+    width: 100%;
+    background-color: rgba(255,255,255,0.45);
+    padding: 20px 10px;
+    margin-top: 150px;
+}
+#gallery .content1 .content1-describtion span {
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 50px;
+    border-bottom: 7px solid #25c5a9;
+}
+#gallery .content2 .content2-describtion span {
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 7px solid #25c5a9;   
+}
+#gallery .content2 {
+    float: left;
+    height: 225px;
+    width: 330px;
+    background: url('../images/box2_img.jpg') no-repeat;
+    margin: 0 25px;
+}
+#gallery .content3 {
+    float: left;
+    height: 250px;
+    width: 338px;
+    border: 1px solid #dbdbdb;
+    padding: 30px 20px;
+    color: #8b8b8b;
+}
+#gallery .content3 span {
+    color: black;
+    font-weight: bold;
+    padding-right: 30px;
+    border-bottom: 7px solid #25c5a9;
+}
+#gallery .content3 p {
+    margin-top: 20px;
+}
 
 
 
