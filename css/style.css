@@ -643,6 +643,7 @@ header nav ul li a {
     font-family: 'Raleway';
     font-weight: 300;
     color: #cfcfcf;
+    padding-left: 10px;
 }
 #form form textarea {
     width: 635px;
@@ -651,7 +652,7 @@ header nav ul li a {
     font-size: 25px;
     font-family: 'Raleway';
     font-weight: 300;
-    padding: 10px 0 0 0;
+    padding: 15px 0 0 10px;
     color: #cfcfcf;
 }
 #form form input:nth-child(2) {
