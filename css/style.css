@@ -92,11 +92,19 @@ header nav ul li a {
     font-size: 14px;
     letter-spacing: 1px;
 }
-.dropdown-1, .dropdown-2 {
+header nav ul li>div {
+    box-sizing: content-box;
     display: none;
+    padding-top: 20px;
+    position: absolute;
+    width: 102px;
+
+}
+.dropdown-1, .dropdown-2 {
+    display: block;
     position: absolute;
     background-color: black;
-    top: 55px;
+    top: 15px;
     left: -18px;
     padding: 15px 10px 15px 10px;
     line-height: 14px;
@@ -113,9 +121,11 @@ header nav ul li a {
     height: 15px;
     transform: rotate(45deg);
 }
-.li-1:hover .dropdown-1, .li-2:hover .dropdown-2 {
+/*
+.li-1:hover >div, .li-2:hover >div {
     display: block;
 }
+*/
 .li-1 li:nth-child(2), .li-2 li:nth-child(2) {
     margin: 15px 0;
 }
@@ -141,23 +151,41 @@ header nav ul li a {
     display: block;
     width: 5%;
     line-height: 480px;
+}
+#intro .arrow-left button, #intro .arrow-right button {
+    margin: auto 0;
+    width: 100%;
+    background-color: transparent;
+    border: none;
     font-size: 70px;
     color: #25c5a9;
     font-weight: 300;
+    cursor: pointer;
+    text-align: left;
 }
-#intro .arrow-left span {
-    margin: auto 0;
-    width: 100%;
+button:focus {
+    outline: none;
 }
-#intro .arrow-right {
+#intro .arrow-right button {
     text-align: right;
 }
 #intro .image, #intro .image-describtion {
     width: 45%;
 }
 #intro .image .image-img {
+    display: none;
     width: 100%;
     background: url('../images/black_chair.png') no-repeat center center;
+}
+#intro .image .image-img:nth-child(2) {
+    display: none;
+    width: 100%;
+    background: url('../images/orange.png') no-repeat center center;
+}
+#intro .image .image-img:last-child {
+    display: none;
+    width: 100%;
+    background: url('../images/red.png') no-repeat center center;
 }
 #intro .image-describtion {
     text-align: center;
@@ -661,6 +689,7 @@ header nav ul li a {
 #form .form .form-right {
     float: right;
     width: 343px;
+    height: 376px;
 }
 #form form .form-image {
     position: relative;
@@ -677,13 +706,16 @@ header nav ul li a {
     width: 50px;
     height: 50px;
 }
-#form .form .form-right input[type=checkbox i]:hover {
+#form .form .form-right input[type=checkbox i]:checked {
     background: url('../images/form_ok.jpg');
 }
 #form .form .form-right input[type=submit] {
-    float: bottom;
     width: 343px;
     height: 70px;
+    border: none;
+    background-color: #25c5a9;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
 /* FOOTER */
