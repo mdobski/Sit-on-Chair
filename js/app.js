@@ -116,15 +116,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Calculator
     
     
-    var dropDownList = document.querySelectorAll('.drop_down_list'); //uchwycenie wszystkich div'ów odpowiedzialnych za całe dropDownList
-    var listLabel = document.querySelectorAll('.list_label'); //uchwycenie wszsystkich wpisów: Wybierz fotel, Wybierz kolor, Wybierz tkaninę
-    var order = document.querySelectorAll('.panel_left *'); //tabelka z wypisanymi wszystkimi pozycjami zamówienia
-    var orderValue = document.querySelectorAll('.panel_right *'); //tabelka z wypisanymi wszystkimi wartościami pozycji zamówienia
-    var li = document.querySelectorAll('.list_panel>li'); //wszystkie elementy li z tego formularza
-    var input = document.querySelector('[id="transport"]'); //checkbox od Transportu
-    var sum = document.querySelector('.sum strong'); //pole w którym wpisywana jest suma
-    
-    // Funkcja odpowiedzialna za przypisanie ceny
+    var dropDownList = document.querySelectorAll('.drop_down_list');
+    var listLabel = document.querySelectorAll('.list_label');
+    var order = document.querySelectorAll('.panel_left *');
+    var orderValue = document.querySelectorAll('.panel_right *');
+    var li = document.querySelectorAll('.list_panel>li');
+    var input = document.querySelector('[id="transport"]');
+    var sum = document.querySelector('.sum strong');
+
     function priceCalculate(){
         var price = 0;
         for(var i=0; i<orderValue.length;i++){
@@ -161,13 +160,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 order[0].innerText = "Chair " + this.innerText;
                 switch(this.innerText){
                     case "Clair":
-                        orderValue[0].innerText = 200;
+                        orderValue[0].innerText = 299;
                         break;
                     case "Margarita":
-                        orderValue[0].innerText = 250;
+                        orderValue[0].innerText = 369;
                         break;
                     case "Selena":
-                        orderValue[0].innerText = 300;
+                        orderValue[0].innerText = 429;
                         break;
                     default:
                         orderValue[0].innerText = "";     
@@ -180,13 +179,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 order[1].innerText = this.innerText;
                 switch(this.innerText){
                     case "Czerwony":
-                        orderValue[1].innerText = 80;
-                        break;
-                    case "Czarny":
                         orderValue[1].innerText = 100;
                         break;
+                    case "Czarny":
+                        orderValue[1].innerText = 0;
+                        break;
                     case "Pomarańczowy":
-                        orderValue[1].innerText = 120;
+                        orderValue[1].innerText = 100;
                         break;
                     default:
                         orderValue[1].innerText = "";     
@@ -202,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         orderValue[2].innerText = 0;
                         break;
                     case "Skóra":
-                        orderValue[2].innerText = 100;
+                        orderValue[2].innerText = 200;
                         break;
                     default:
                         orderValue[2].innerText = "";     
@@ -216,7 +215,7 @@ document.addEventListener('DOMContentLoaded', function() {
     input.addEventListener('change',function(){
         if(input.checked === true){
             order[3].innerText = "Transport";
-            orderValue[3].innerText = 50;
+            orderValue[3].innerText = 80;
         } else {
             order[3].innerText = "";
             orderValue[3].innerText = "";
