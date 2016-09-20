@@ -61,23 +61,23 @@ ul {
 a {
     text-decoration: none;
 }
-header {
+#header {
     width: 100%;
     background-color: black;
 }
-header p {
+#header p {
     color: white;
     text-transform: uppercase;
     font-size: 14px;
     float: left;
     font-weight: 300;
 }
-header p span {
+#header p span {
     color: #28cfb5;
     font-weight: bold;
     line-height: 40px;
 }
-header nav ul {
+#header nav ul {
     float: right;
 }
 .li-1, .li-2, .li-3 {
@@ -86,13 +86,13 @@ header nav ul {
     line-height: 40px;
     margin-left: 50px;
 }
-header nav ul li a {
+#header nav ul li a {
     color: white;
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1px;
 }
-header nav ul li>div {
+#header nav ul li>div {
     box-sizing: content-box;
     display: none;
     padding-top: 20px;
@@ -633,6 +633,278 @@ button:focus {
     color: #25c5a9;
 }
 
+
+/*-*-*-* KALKULATOR *-*-*-*/
+
+
+section.application *{
+    box-sizing: content-box; 
+}
+
+.application {
+  background-color: #f9f9f9;
+  padding:30px 0;
+    font-family: 'Raleway', Verdana, sans-serif;
+}
+
+.application .align_right {
+    width: 325px;
+}
+
+.application .green_bell {
+    width: 325px;
+    font-size: 20px;
+    padding-right: 155px;
+    padding-bottom: 5px;
+    border-bottom: 7px solid #25c5a9;
+    text-transform: uppercase;
+    font-family: 'Raleway', Verdana, sans-serif;
+    font-weight: 100;
+}
+
+.application header.align_right{
+  text-align: right;
+}
+
+
+.inline {
+  display:inline-block;
+  width:300px;
+  padding:14px;
+  vertical-align: top;
+}
+
+.choice_part .green_bell {
+    padding-right: 9px;
+}
+
+.form { 
+  margin-top:50px;
+}
+
+.drop_down_list {
+  border:1px solid #8de0d2;
+  width: 280px;
+  height:38px;
+  background-color: white;
+  margin-top:22px;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.list_label {
+  font-size: 30px;
+  color: #e2e2e2;
+  font-family: 'ralewaylight', Arial, Tahoma, sans-serif;
+  cursor: pointer;
+}
+
+
+.checkbox {
+  position: relative;
+  padding: 30px 30px 30px 0;
+}
+
+.checkbox input {
+  display: block;
+  opacity: 0;
+  height: 48px;
+  position: absolute;
+  width: 48px;
+  cursor: pointer;
+}
+
+.checkbox label {
+  display: block;
+  padding-left: 65px;
+  position: relative;
+  font-size: 28px;
+  color: #cecece;
+  line-height: 120%;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.checkbox label::before, .checkbox label::after {
+  border: 1px solid #27c7ab;
+  content: "";
+  display: block;
+  left: 0;
+  height: 48px;
+  position: absolute;
+  width: 48px;
+  top: 0;
+}
+
+.checkbox label::after {
+  background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center;
+  border: 0;
+  display: none;
+}
+
+.checkbox input:checked + label::after {
+  display: block;
+}
+
+
+.active {
+  background: url('../images/form_ok.jpg');
+  width: 48px;
+  height: 40px;
+
+}
+.inline_text {
+  display: inline-block;
+  width: 228px;
+  vertical-align: top;
+  margin-top: 30px;
+  margin-left: 15px;
+  color: #aeaeae;
+}
+
+.image_part{
+  width: 350px;
+}
+
+.image_part img{
+  margin-top: 110px;
+  margin-left: 45px;
+}
+
+.summary_panel {
+  background-color: white;
+  width:100%;
+  height:195px;
+  padding:10px;
+  margin-top: 50px;
+
+}
+
+.application .green_button {
+  background-color: #27c7ab;
+  color: white;
+  text-align:center;
+  text-transform: uppercase;
+  width: 200px;
+  padding: 10px 30px;
+  font-size: 24px;
+  display: inline-block;
+  font-family: 'ralewaymedium', Arial, Tahoma, sans-serif;
+  margin-top: 20px;
+  margin-left: 29px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.application .green_button:hover {
+    background-color: white;
+    color: #27c7ab;
+    border: 1px solid #27c7ab;
+}
+
+.panel_left {
+  display: inline-block;
+  width: 185px;
+  vertical-align: top;
+  padding-bottom:10px;
+  border-bottom:1px solid #e7e7e7;
+  height: 135px;
+}
+
+.panel_right {
+  display: inline-block;
+  width: 100px;
+  border-left:1px solid #e7e7e7;
+  text-align: right;
+  vertical-align: top;
+  padding-bottom:10px;
+  border-bottom:1px solid #e7e7e7;
+  height: 135px;
+}
+
+.panel_left h4 , .panel_right h4{
+  color: #24baa0;
+  font-size: 23px;
+  margin: 0;
+}
+
+.panel_left span{
+  margin-top: 10px;
+  font-size: 22px;
+  color: #5b5a5a;
+  display: block;
+}
+
+.panel_right span {
+  display: block;
+  font-size: 22px;
+  color: #24baa0;
+  margin-top:10px;
+}
+
+.sum_label{
+  display: inline-block;
+  width: 185px;
+  margin-top: 10px;
+  font-size: 22px;
+  color: #5b5a5a;
+}
+
+.sum {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-top: 10px;
+  font-size: 22px;
+  color: #24baa0;
+}
+
+.list_arrow {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #24baa0;
+  display:block;
+  position: absolute;
+  right: 14px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.list_panel {
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 288px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  list-style: none;
+  margin: 0;
+  left: 0px;
+  z-index: 2;
+  position: absolute;
+  top: 54px;
+  display:none;
+}
+.list_panel li {
+  margin-top:10px;
+  cursor: pointer;
+  color: #585858;
+}
+
+.title {
+  height: 30px;
+}
+
+.visible{
+    display: block;
+}
+
+.invisible{
+    display: none;
+}
+
+
 /*-*-*-* SECTION 'FORM' *-*-*-*/
 
 #form {
@@ -687,6 +959,9 @@ button:focus {
     margin: 25px 0;
 }
 #form .form .form-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     float: right;
     width: 343px;
     height: 376px;
@@ -700,15 +975,59 @@ button:focus {
     background: url('../images/red_chair.png') no-repeat center center;
     margin: 0 auto;
 }
+/*
 #form .form .form-right input[type=checkbox] {
     border: 1px solid #25c5a9;
     color: #cfcfcf;
     width: 50px;
     height: 50px;
 }
-#form .form .form-right input[type=checkbox i]:checked {
+#form .form .form-right input[type=checkbox]:checked {
     background: url('../images/form_ok.jpg');
 }
+*/
+
+#form .form .form-right .form_checkbox input {
+  display: block;
+  opacity: 0;
+  height: 48px;
+  position: absolute;
+  width: 48px;
+  cursor: pointer;
+}
+
+#form .form .form-right .form_checkbox label {
+  display: block;
+  padding-left: 65px;
+  position: relative;
+  font-size: 18px;
+  color: #cecece;
+  line-height: 120%;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+#form .form .form-right .form_checkbox label::before, #form .form .form-right .form_checkbox label::after {
+  border: 1px solid #27c7ab;
+  content: "";
+  display: block;
+  left: 0;
+  height: 48px;
+  position: absolute;
+  width: 48px;
+  top: 0;
+}
+
+#form .form .form-right .form_checkbox label::after {
+  background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center;
+  border: 0;
+  display: none;
+}
+
+#form .form .form-right .form_checkbox input:checked + label::after {
+  display: block;
+}
+
 #form .form .form-right input[type=submit] {
     width: 343px;
     height: 70px;
@@ -716,6 +1035,16 @@ button:focus {
     background-color: #25c5a9;
     border-radius: 10px;
     margin-top: 20px;
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'ralewaymedium', Arial, Tahoma, sans-serif;
+}
+#form .form .form-right input[type=submit]:hover {
+    outline: none;
+    background-color: white;
+    border: 1px solid #25c5a9;
+    color: #25c5a9;
 }
 
 /* FOOTER */
@@ -749,6 +1078,32 @@ button:focus {
 #footer .footer-media {
     float: right;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
